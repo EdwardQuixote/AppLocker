@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/white" >
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/ll_applock"
@@ -12,12 +12,15 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp" >
-<ImageView
-    android:layout_width="70dp"
-    android:layout_height="70dp"
-    android:layout_marginTop="36dp"
-    android:src="@drawable/icon"/>
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/icon"
+            android:contentDescription="@string/imgvLockerIcon"/>
+
         <TextView
             android:id="@+id/tv_message"
             android:layout_width="fill_parent"
@@ -26,129 +29,128 @@
             android:paddingBottom="16dp"
             android:paddingTop="16dp"
             android:singleLine="true"
+            android:text="@string/txtEnterPin"
             android:textColor="#FF464646"
-            android:text="Enter Pin"
             android:textSize="18sp" />
 
         <LinearLayout
             android:id="@+id/ll_passcodes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/passcode_1"
-                style="@style/PasscodeInputIStyle" >
+                style="@style/PasscodeInputIStyle">
 
                 <requestFocus />
             </EditText>
 
             <EditText
                 android:id="@+id/passcode_2"
-                style="@style/PasscodeInputIStyle" >
-            </EditText>
+                style="@style/PasscodeInputIStyle"/>
 
             <EditText
                 android:id="@+id/passcode_3"
-                style="@style/PasscodeInputIStyle" >
-            </EditText>
+                style="@style/PasscodeInputIStyle"/>
 
             <EditText
                 android:id="@+id/passcode_4"
-                style="@style/PasscodeInputIStyle" >
-            </EditText>
+                style="@style/PasscodeInputIStyle"/>
         </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="bottom"
-    android:layout_marginBottom="16dp"
-    android:orientation="vertical">
-        <TableLayout
-            android:id="@+id/tl_keys"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
             android:gravity="bottom"
-            android:shrinkColumns="*"
-            android:stretchColumns="*" >
+            android:orientation="vertical">
 
-            <TableRow>
+            <TableLayout
+                android:id="@+id/tl_keys"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
 
-                <Button
-                    android:id="@+id/button1"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="1" />
+                <TableRow>
 
-                <Button
-                    android:id="@+id/button2"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="2" />
+                    <Button
+                        android:id="@+id/button1"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn1" />
 
-                <Button
-                    android:id="@+id/button3"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="3" />
-            </TableRow>
+                    <Button
+                        android:id="@+id/button2"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn2"/>
 
-            <TableRow>
+                    <Button
+                        android:id="@+id/button3"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn3" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/button4"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="4" />
+                <TableRow>
 
-                <Button
-                    android:id="@+id/button5"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="5" />
+                    <Button
+                        android:id="@+id/button4"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn4" />
 
-                <Button
-                    android:id="@+id/button6"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="6" />
-            </TableRow>
+                    <Button
+                        android:id="@+id/button5"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn5" />
 
-            <TableRow>
+                    <Button
+                        android:id="@+id/button6"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn6" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/button7"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="7" />
+                <TableRow>
 
-                <Button
-                    android:id="@+id/button8"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="8" />
+                    <Button
+                        android:id="@+id/button7"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn7" />
 
-                <Button
-                    android:id="@+id/button9"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="9" />
-            </TableRow>
+                    <Button
+                        android:id="@+id/button8"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn8" />
 
-            <TableRow>
+                    <Button
+                        android:id="@+id/button9"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn9" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/button_clear"
-                    style="@style/PasscodeButtonStyle"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:text="CLEAR" />
+                <TableRow>
 
-                <Button
-                    android:id="@+id/button0"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="0" />
+                    <Button
+                        android:id="@+id/button_clear"
+                        style="@style/PasscodeButtonStyle"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:text="@string/btnClear" />
 
-                <Button
-                    android:id="@+id/button_erase"
-                    style="@style/PasscodeButtonStyle"
-                    android:text="DEL" />
-            </TableRow>
-        </TableLayout>
-</LinearLayout>
+                    <Button
+                        android:id="@+id/button0"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btn0" />
+
+                    <Button
+                        android:id="@+id/button_erase"
+                        style="@style/PasscodeButtonStyle"
+                        android:text="@string/btnDelete" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

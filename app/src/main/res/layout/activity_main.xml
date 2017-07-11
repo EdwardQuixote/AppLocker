@@ -14,12 +14,12 @@
         android:id="@+id/bt_on_off"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18dp"/>
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/bt_change"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bt_on_off"
-        android:textSize="18dp"/>
+        android:textSize="18sp"/>
 </RelativeLayout>

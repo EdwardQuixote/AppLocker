@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AppLocker.iml" filepath="$PROJECT_DIR$/AppLocker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Support_AppLocker.iml" filepath="$PROJECT_DIR$/Support_AppLocker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/locker/locker.iml" filepath="$PROJECT_DIR$/locker/locker.iml" />
     </modules>
