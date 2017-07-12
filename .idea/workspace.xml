@@ -20,13 +20,12 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a0bfe6-b6ad-4dba-8f37-f77e3d6b5953" name="Default" comment="- Lowered the gradle version of this library from &quot;2.2.2&quot; to &quot;2.1.0&quot;&#10;- Just did this to see if it'll help speed up build process of projects that depend on this library.">
+    <list default="true" id="27a0bfe6-b6ad-4dba-8f37-f77e3d6b5953" name="Default" comment="- Removed dependency on support-v4 coz it wasn't used/necessary.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locker/locker.iml" afterPath="$PROJECT_DIR$/locker/locker.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locker/build.gradle" afterPath="$PROJECT_DIR$/locker/build.gradle" />
     </list>
     <ignored path="AppLocker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -132,11 +131,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75268817">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/locker/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8333333">
+              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -2408,7 +2417,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5999146634836" />
+        <entry key="$PROJECT_DIR$" value="5999220694637" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2595,18 +2604,18 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1.aar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/25.3.1/support-v4-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/design/25.3.1/design-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/25.3.1/support-v4-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.3.1/support-vector-drawable-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/25.3.1/animated-vector-drawable-25.3.1.aar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1.aar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/transition/25.3.1/transition-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-media-compat/25.3.1/support-media-compat-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-core-utils/25.3.1/support-core-utils-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-core-ui/25.3.1/support-core-ui-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-fragment/25.3.1/support-fragment-25.3.1.aar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1.aar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/transition/25.3.1/transition-25.3.1.aar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -2698,19 +2707,19 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/25.3.1/support-v4-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/design/25.3.1/design-25.3.1.aar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-v4/25.3.1/support-v4-25.3.1.aar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.3.1/support-vector-drawable-25.3.1.aar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/25.3.1/animated-vector-drawable-25.3.1.aar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1.aar" />
+                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/transition/25.3.1/transition-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-media-compat/25.3.1/support-media-compat-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-core-utils/25.3.1/support-core-utils-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-core-ui/25.3.1/support-core-ui-25.3.1.aar" />
                             <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-fragment/25.3.1/support-fragment-25.3.1.aar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.3.1/support-vector-drawable-25.3.1.aar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/25.3.1/animated-vector-drawable-25.3.1.aar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1.aar" />
-                            <option value="C:/Android/android-sdk/extras/android/m2repository/com/android/support/transition/25.3.1/transition-25.3.1.aar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/locker" />
@@ -2865,7 +2874,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/locker/build.gradle" />
         <option value="$PROJECT_DIR$/locker/src/main/java/com/balram/locker/main/AppLockerActivity.java" />
         <option value="$PROJECT_DIR$/locker/src/main/res/layout/activity_pattern_lock.xml" />
         <option value="$PROJECT_DIR$/locker/src/main/res/values/strings.xml" />
@@ -2873,6 +2881,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/locker/build.gradle" />
       </list>
     </option>
   </component>
@@ -3350,7 +3359,13 @@
       <option name="project" value="LOCAL" />
       <updated>1499784902916</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Removed dependency on support-v4 coz it wasn't used/necessary.">
+      <created>1499837331579</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1499837331579</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3399,7 +3414,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Initial Commit since cloning this repo.&#10;- I've added support for AppCompatActivity onto this Library (locker).&#10;- Before, AppLockerActivity would extend &quot;Activity&quot; only; now extends &quot;AppCompatActivity&quot; which provides support for the support-v7 Android Library.&#10;- I also added support-v4 Android Library as a dependency in this library.&#10;- Also made a few corrections in relation to Android best practices, e.g. adding &quot;contentDescription&quot; on an ImageView." />
     <MESSAGE value="- Lowered the gradle version of this library from &quot;2.2.2&quot; to &quot;2.1.0&quot;&#10;- Just did this to see if it'll help speed up build process of projects that depend on this library." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Lowered the gradle version of this library from &quot;2.2.2&quot; to &quot;2.1.0&quot;&#10;- Just did this to see if it'll help speed up build process of projects that depend on this library." />
+    <MESSAGE value="- Removed dependency on support-v4 coz it wasn't used/necessary." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Removed dependency on support-v4 coz it wasn't used/necessary." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -3749,14 +3765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locker/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86021507">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43010753">
@@ -3775,8 +3783,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75268817">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locker/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
           <folding />
         </state>
       </provider>
