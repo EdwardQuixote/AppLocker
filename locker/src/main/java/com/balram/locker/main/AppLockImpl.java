@@ -1,15 +1,15 @@
 package com.balram.locker.main;
 
-import android.app.Activity;
 import android.app.Application;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.balram.locker.utils.Encryptor;
-import com.balram.locker.view.LockActivity;
 import com.balram.locker.utils.Locker;
+import com.balram.locker.view.LockActivity;
 
 public class AppLockImpl extends Locker implements PageListener {
 	public static final String TAG = "DefaultAppLock";
@@ -84,7 +84,7 @@ public class AppLockImpl extends Locker implements PageListener {
 		return false;
 	}
 
-	private boolean isIgnoredActivity(Activity activity) {
+	private boolean isIgnoredActivity(AppCompatActivity activity) {
 		String clazzName = activity.getClass().getName();
 
 		// ignored activities
@@ -96,7 +96,7 @@ public class AppLockImpl extends Locker implements PageListener {
 		return false;
 	}
 
-	private boolean shouldLockSceen(Activity activity) {
+	private boolean shouldLockSceen(AppCompatActivity activity) {
 
 		// already unlock
 		if (activity instanceof LockActivity) {
@@ -130,7 +130,7 @@ public class AppLockImpl extends Locker implements PageListener {
 	}
 
 	@Override
-	public void onActivityPaused(Activity activity) {
+	public void onActivityPaused(AppCompatActivity activity) {
 		String clazzName = activity.getClass().getName();
 		Log.d(TAG, "onActivityPaused " + clazzName);
 
@@ -140,7 +140,7 @@ public class AppLockImpl extends Locker implements PageListener {
 	}
 
 	@Override
-	public void onActivityResumed(Activity activity) {
+	public void onActivityResumed(AppCompatActivity activity) {
 		String clazzName = activity.getClass().getName();
 		Log.d(TAG, "onActivityResumed " + clazzName);
 
@@ -160,7 +160,7 @@ public class AppLockImpl extends Locker implements PageListener {
 	}
 
 	@Override
-	public void onActivityCreated(Activity activity) {
+	public void onActivityCreated(AppCompatActivity activity) {
 
 		if (isIgnoredActivity(activity)) {
 			return;
@@ -170,7 +170,7 @@ public class AppLockImpl extends Locker implements PageListener {
 	}
 
 	@Override
-	public void onActivityDestroyed(Activity activity) {
+	public void onActivityDestroyed(AppCompatActivity activity) {
 		if (isIgnoredActivity(activity)) {
 			return;
 		}
@@ -183,14 +183,14 @@ public class AppLockImpl extends Locker implements PageListener {
 	}
 
 	@Override
-	public void onActivitySaveInstanceState(Activity activity) {
+	public void onActivitySaveInstanceState(AppCompatActivity activity) {
 		if (isIgnoredActivity(activity)) {
 			return;
 		}
 	}
 
 	@Override
-	public void onActivityStarted(Activity activity) {
+	public void onActivityStarted(AppCompatActivity activity) {
 		String clazzName = activity.getClass().getName();
 		Log.d(TAG, "onActivityStarted " + clazzName);
 
@@ -202,7 +202,7 @@ public class AppLockImpl extends Locker implements PageListener {
 	}
 
 	@Override
-	public void onActivityStopped(Activity activity) {
+	public void onActivityStopped(AppCompatActivity activity) {
 		String clazzName = activity.getClass().getName();
 		Log.d(TAG, "onActivityStopped " + clazzName);
 

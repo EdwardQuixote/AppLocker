@@ -10,9 +10,10 @@
             android:name=".view.LockActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".main.PatternLockActivity"
+        <activity
+            android:name=".main.PatternLockActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden"/>
     </application>
 
 </manifest>

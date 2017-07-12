@@ -1,8 +1,8 @@
 package com.balram.locker.view;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.text.Spanned;
@@ -35,14 +35,14 @@ public class LockActivity extends AppLockerActivity {
 	protected EditText codeField4 = null;
 	protected InputFilter[] filters = null;
 	protected TextView tvMessage = null;
-	protected Activity mActivity;
+	protected AppCompatActivity mCompatActivity;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.page_passcode);
-		mActivity=this;
+		mCompatActivity =this;
 
 		tvMessage = (TextView) findViewById(R.id.tv_message);
 
@@ -288,7 +288,7 @@ public class LockActivity extends AppLockerActivity {
 	};
 
 	protected void onPasscodeError() {
-		Encryptor.snackPeak(mActivity,getString(R.string.passcode_wrong));
+		Encryptor.snackPeak(mCompatActivity,getString(R.string.passcode_wrong));
 
 		Thread thread = new Thread() {
 			public void run() {

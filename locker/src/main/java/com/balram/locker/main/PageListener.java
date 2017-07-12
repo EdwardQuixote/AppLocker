@@ -1,20 +1,20 @@
 package com.balram.locker.main;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 
 public interface PageListener {
 
-	void onActivityCreated(Activity activity);
+	void onActivityCreated(AppCompatActivity activity);
 
-	void onActivityStarted(Activity activity);
+	void onActivityStarted(AppCompatActivity activity);
 
-	void onActivityResumed(Activity activity);
+	void onActivityResumed(AppCompatActivity activity);
 
-	void onActivityPaused(Activity activity);
+	void onActivityPaused(AppCompatActivity activity);
 
-	void onActivityStopped(Activity activity);
+	void onActivityStopped(AppCompatActivity activity);
 
-	void onActivitySaveInstanceState(Activity activity);
+	void onActivitySaveInstanceState(AppCompatActivity activity);
 
-	void onActivityDestroyed(Activity activity);
+	void onActivityDestroyed(AppCompatActivity activity);
 }
