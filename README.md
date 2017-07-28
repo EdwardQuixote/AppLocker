@@ -1,5 +1,5 @@
 # App lock library for Android
-[![](https://jitpack.io/v/balrampandey19/AppLocker.svg)](https://jitpack.io/#balrampandey19/AppLocker)
+[![](https://jitpack.io/v/EdwardQuixote/Support_AppLocker.svg)](https://jitpack.io/#EdwardQuixote/Support_AppLocker)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 
@@ -62,7 +62,7 @@ and:
 
 ```gradle
 dependencies {
-   compile 'com.github.balrampandey19:AppLocker:1.0.1'
+   compile 'com.github.EdwardQuixote:Support_AppLocker:2.0.3'
 }
 ```
 
